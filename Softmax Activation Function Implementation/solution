@@ -1,0 +1,7 @@
+import math
+
+def softmax(scores: list[float]) -> list[float]:
+	# Your code here
+    prob=[math.e**z for z in scores]
+    probabilities=[z/sum(prob) for z in prob]
+	return probabilities
